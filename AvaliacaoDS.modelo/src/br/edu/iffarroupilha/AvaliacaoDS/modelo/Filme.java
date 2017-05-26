@@ -2,19 +2,21 @@ package br.edu.iffarroupilha.AvaliacaoDS.modelo;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
 public class Filme {
 	
-	@Id
+	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(nullable = false)
 	private int idFilme;
 	
 	@Column(length=4, nullable = false)
-	private String anoLancamento;
+	private int anoLancamento;
 	
-	@Column(length=4, nullable = false)
+	@Column(length=255, nullable = false)
 	private String titulo;
 
 	public int getIdFilme() {
@@ -25,11 +27,11 @@ public class Filme {
 		this.idFilme = idFilme;
 	}
 
-	public String getAnoLancamento() {
+	public int getAnoLancamento() {
 		return anoLancamento;
 	}
 
-	public void setAnoLancamento(String anoLancamento) {
+	public void setAnoLancamento(int anoLancamento) {
 		this.anoLancamento = anoLancamento;
 	}
 
