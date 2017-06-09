@@ -2,10 +2,12 @@ package br.edu.iffarroupilha.AvaliacaoDS.visao.web;
 
 import java.util.List;
 
+import br.com.caelum.vraptor.Resource;
 import br.com.caelum.vraptor.Result;
 import br.edu.iffarroupilha.AvaliacaoDS.controle.FilmeControle;
 import br.edu.iffarroupilha.AvaliacaoDS.modelo.Filme;
 
+@Resource
 public class FilmeController {
 	
 	private FilmeControle controle;
