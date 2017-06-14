@@ -26,7 +26,7 @@
 				<c:forEach items="${filmes}" var="f">
 					<tr>
 						<td>${f.titulo}</td>
-						<td>${f.ano}</td>
+						<td>${f.anoLancamento}</td>
 					</tr>
 				</c:forEach>
 			</tbody>

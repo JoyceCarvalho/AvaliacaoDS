@@ -6,6 +6,9 @@
         <dependent-module archiveName="AvaliacaoDS.controle-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/AvaliacaoDS.controle/AvaliacaoDS.controle">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="AvaliacaoDS.modelo-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/AvaliacaoDS.modelo/AvaliacaoDS.modelo">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="AvaliacaoDS.visao.web"/>
         <property name="java-output-path" value="/AvaliacaoDS.visao.web/build/classes"/>
     </wb-module>
