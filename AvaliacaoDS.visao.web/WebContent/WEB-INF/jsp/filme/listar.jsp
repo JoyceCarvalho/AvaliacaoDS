@@ -7,25 +7,25 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <jsp:include page="../../../importacoes.jsp"></jsp:include>
 <script type="text/javascript">
-	$(function(){
+	$(function() {
 		$('table').dataTable({
-			"language": {
-	            "lengthMenu": "Mostrando _MENU_ registros por pagina",
-	            "zeroRecords": "Nenhuma ocorrencia",
-	            "info": "Mostrando _PAGE_ de _PAGES_",
-	            "infoEmpty": "Sem registros",
-	            "infoFiltered": "(buscando de  _MAX_ registros)",
-	            "search": "Buscar:",
-	            "processing":     "Processando...",
-	            "paginate": {
-	                "first":      "Primeira",
-	                "last":       "Ultima",
-	                "next":       "Proxima",
-	                "previous":   "Anterior"
-	            }
-	        }
+			"language" : {
+				"lengthMenu" : "Mostrando _MENU_ registros por pagina",
+				"zeroRecords" : "Nenhuma ocorrencia",
+				"info" : "Mostrando _PAGE_ de _PAGES_",
+				"infoEmpty" : "Sem registros",
+				"infoFiltered" : "(buscando de  _MAX_ registros)",
+				"search" : "Buscar:",
+				"processing" : "Processando...",
+				"paginate" : {
+					"first" : "Primeira",
+					"last" : "Ultima",
+					"next" : "Proxima",
+					"previous" : "Anterior"
+				}
+			}
 		});
-	})	
+	})
 </script>
 <title>Cliente</title>
 </head>
@@ -52,8 +52,12 @@
 			</tbody>
 		</table>
 
-		<a class="btn btn-sm btn-primary" href="cadastrar"><span
-			class="glyphicon glyphicon-plus"></span> Adicionar</a>
+		<a class="btn btn-sm btn-primary" href="cadastrar"> <span
+			class="fa fa-plus-circle"></span> Adicionar
+		</a> 
+		<a class="btn btn-sm btn-warning" href="http://localhost:8080/AvaliacaoDS.visao.web/"> <span
+			class="fa fa-reply"></span> Voltar
+		</a>
 
 	</div>
 

@@ -9,6 +9,9 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
+import javax.swing.plaf.nimbus.NimbusLookAndFeel;
 
 import br.edu.iffarroupilha.AvaliacaoDS.controle.FilmeControle;
 import br.edu.iffarroupilha.AvaliacaoDS.modelo.Filme;
@@ -17,15 +20,23 @@ import br.edu.iffarroupilha.AvaliacaoDS.modelo.Filme;
 
 public class FrmFilme extends JFrame{
 
-	private Avaliacao telaPrincipal;
+	//private Avaliacao telaPrincipal;
 
-	public FrmFilme( Avaliacao telaPrincipal ) {
+	public FrmFilme() {
 		
-		this.telaPrincipal = telaPrincipal;
-		setTitle(":: Avaliacao -> Clientes ::");
+		//this.telaPrincipal = telaPrincipal;
+		setTitle(":: Avaliacao Desenvolvimento de Software ::");
 		setSize(320, 240);
-		setLocationRelativeTo(telaPrincipal);
+		setLocationRelativeTo(null);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		desenhaComponentes();
+		// muda a aparencia da aplicação java
+		try {
+			UIManager.setLookAndFeel( new NimbusLookAndFeel());
+		} catch (UnsupportedLookAndFeelException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		setVisible(true);
 		
 	}
@@ -76,5 +87,9 @@ public class FrmFilme extends JFrame{
 		add(txtTitulo);
 		add(btnGravar);
 		
+	}
+	
+	public static void main(String[] args) {
+		new FrmFilme();
 	}
 }

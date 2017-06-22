@@ -13,7 +13,7 @@
 				<h1>Avaliação de Desenvolvimento de Software!!!</h1>		
 			</div>
 			<div class="panel-body">
-				<a class="btn btn-primary" href="filme/listar"><span class="glyphicon glyphicon-user"></span> Filmes </a>
+				<a class="btn btn-primary" href="filme/listar"><span class="fa fa-film"></span> Filmes </a>
 			</div>
 		</div>
 	</body>

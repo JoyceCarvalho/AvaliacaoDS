@@ -51,7 +51,7 @@ public class Avaliacao extends JFrame {
 			
 			public void actionPerformed(ActionEvent arg0) {
 				
-				new FrmFilme(Avaliacao.this);
+				//new FrmFilme(Avaliacao.this);
 				
 			}
 		});
@@ -62,8 +62,8 @@ public class Avaliacao extends JFrame {
 		
 	}
 
-	public static void main(String[] args) {
+	//public static void main(String[] args) {
 		
-		new Avaliacao();
-	}
+		//new Avaliacao();
+	//}
 }

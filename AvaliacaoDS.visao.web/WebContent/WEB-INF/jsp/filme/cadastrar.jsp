@@ -6,6 +6,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 		<title>Cadastro de Cliente</title>
 		<jsp:include page="../../../importacoes.jsp"></jsp:include>	
+		
 		<script type="text/javascript">
 			$(function(){
 				$('#txtAno').mask("0000");
@@ -20,15 +21,24 @@
 				<form action="gravar">
 					<div class="form-group">
 						<label for="txtAno">Ano:</label>
-						<input class="form-control" type="text" name="filme.anoLancamento" id="txtAno"  required>
+						<input class="form-control" type="text" name="filme.anoLancamento" placeholder="2017" id="txtAno"  required>
 					</div>
 					<div class="form-group">
-						<label for="txtTitulo">Titulo:</label>
-						<input class="form-control" type="text" name="filme.titulo" id="txtTitulo" required>
+						<label for="txtTitulo">Título:</label>
+						<input class="form-control" type="text" name="filme.titulo" id="txtTitulo" placeholder="Título" required>
 					</div>
 					
-					<button class="btn btn-success" type="submit" ><span class="glyphicon glyphicon-floppy-disk"></span> Gravar</button>
+					
+					<div class="form-group">
+						<button class="btn btn-sm btn-success" type="submit" ><span class="fa fa-save"></span> Gravar</button>
+												
+						<a class="btn btn-sm btn-danger" href="http://localhost:8080/AvaliacaoDS.visao.web/"> <span
+							class="fa fa-home"></span> Home
+						</a>
+					</div>
 				</form>
+				
+				
 			</div>
 		</div>
 	</body>

@@ -13,8 +13,9 @@
 				<h2>Item Gravado com sucesso!!!!</h2>
 			</div>
 			<div class="panel-body text-center">
-				<a class="btn btn-success" href="listar"><span
-					class="glyphicon glyphicon-arrow-left"></span> Voltar</a>
+				<a class="btn btn-primary" href="http://localhost:8080/AvaliacaoDS.visao.web/"> <span
+					class="fa fa-reply"></span> Voltar
+				</a>
 			</div>
 		</div>
 	</body>
